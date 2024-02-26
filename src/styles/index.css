@@ -1,0 +1,197 @@
+:root {
+  --bg-col: #f2f4f6;
+  --paragraph: #1b2d45;
+  --card-bg: #fffffe;
+  --cta: #00ebb3;
+  --cancel: #ff5470;
+  --border: #1b2d45;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--paragraph);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+main {
+  background-color: var(--bg-col);
+  padding-bottom: 100px;
+}
+.pageTitle {
+  margin-left: 32px;
+}
+.heroLogo {
+  width: 90vw;
+  margin-left: 5vw;
+}
+#nav {
+  border-bottom: 3px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 32px;
+  background-color: var(--card-bg);
+}
+
+#navLogo {
+  background-color: transparent;
+}
+
+#navProfileImage {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: var(--bg-col);
+}
+
+#navProfileContainer {
+  height: 80px;
+  position: relative;
+}
+
+#navProfileContainer p {
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 20px;
+  height: 30px;
+  width: 55px;
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  background-color: var(--card-bg);
+}
+#mobileBasket {
+  background-color: var(--card-bg);
+  border-top: 3px solid var(--border);
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+#basketIcon {
+  width: 55px;
+  height: 55px;
+}
+.catCard {
+  width: 250px;
+  border: 2px solid var(--border);
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--card-bg);
+  overflow: hidden;
+}
+.catCardThumb {
+  overflow: hidden;
+  width: 125px;
+  height: 125px;
+  margin-bottom: -4px;
+}
+
+#catCardTitle {
+  padding: 4px;
+  text-decoration: none;
+}
+
+.navigationButton {
+  background-color: var(--cta);
+  color: var(--bg-col);
+  padding: 8px 12px;
+  border-radius: 30px;
+  width: max-content;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.buttonText {
+  background-color: transparent;
+  color: var(--bg-col);
+}
+.navLink {
+  text-decoration: none;
+}
+
+.addToCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cta);
+  border: none;
+  padding: 8px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+.itemCard {
+  width: 35vw;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.itemCard p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.itemCardThumb {
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.priceDisplay {
+  padding: 8px;
+  background-color: var(--card-bg);
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+  border-radius: 50px;
+}
+
+.itemWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+}
+
+#profileContainer {
+  width: 50vw;
+  margin: auto;
+  position: relative;
+  border: 1px solid black;
+}
+#profileImage {
+  width: 100%;
+  border-radius: 50%;
+}
+#profileContainer h3 {
+  width: 30vw;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  left: calc();
+}
